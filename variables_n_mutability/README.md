@@ -8,6 +8,6 @@ Here I practiced variables and mutability concepts
 
 To run the program, type the following in the command line:
 
-```
+```bash
 cargo run
 ```
