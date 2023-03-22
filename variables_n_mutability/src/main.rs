@@ -9,6 +9,8 @@ fn variables() {
     println!("value of x {x}");
 }
 
+const GLOBAL_CONST: u8 = 10;
+
 fn constants() {
     // constants are values that are bound to a name and are not allowed to change
     // Even, you are not allowed to use the mut keyword with constants
@@ -17,6 +19,10 @@ fn constants() {
     const PI: f64 = 3.14; // Gonna make haters!
 
     println!("The area of a circle with radius 2cm is {}", PI * f64::powi(2.0, 2));
+
+    // Constants can be declared in any scope, including global scope
+    // as opposed to variables, which are always declared in a scope
+    println!("The value of GLOBAL_CONST is {GLOBAL_CONST}");
 
     // Operations we can do over const at compiling time
     // https://doc.rust-lang.org/reference/const_eval.html
